@@ -68,6 +68,9 @@ contact: 'team@carpentries.org' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- 01-collectors-and-determiners.md
+- 02-duplicates-in-different-herbaria.md
+- 03-collecting-trips.md
 
 # Information for Learners
 learners: 
