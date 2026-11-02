@@ -1,12 +1,14 @@
 ---
-title: "Using Markdown"
+title: "What next after specimen digitisation?"
 teaching: 10 # teaching time in minutes
-exercises: 2 # exercise time in minutes
+exercises: 5 # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using Markdown and `{sandpaper}`?
+- What information have we mobilised through specimen digitisation?
+- Where are specimen records available?
+- What evidence do they provide? 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -17,23 +19,50 @@ exercises: 2 # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Context
+
+In our previous two sessions, we looked at:
+
+- OpenRefine for improving data quality
+    - Cleaning, standardising and preparing specimen data.
+- R for analysing data at scale
+    - Exploring, summarising and visualising specimen data.
+
+In this session we will look at connecting specimen data: discovering relationships 
+between specimens and reconstructing the collecting activities behind them, and what 
+collections they have been accessioned into.
+
 ## Introduction
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+### Specimen digitisation
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+Herbarium specimen digitisation has generated large numbers of standardised 
+specimen records and images, shared through institutional portals and aggregated 
+into repositories like GBIF. 
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+### Specimens as evidence
+
+Specimen records are often described as essential evidence - *what* / *where* / *when*.
+Further investigation into how specimens were collected can uncover *who* collected 
+(and identified) them, and *why* they were collected (eg to document a habitat or 
+specific geographic location, or to expand our understanding of a particular 
+taxonomic group).
+
+### Data standardisation
+
+Digitisation (and data aggregation) processes have taken care to standardise 
+scientific names for specimens, but there are other fields commonly used for searching 
+that are more variable in format, especially when records are searched in an aggregator, 
+across specimens from different institutions.
+
+| Attribute  | Field   | Level of completeness |
+|---|---|---|
+| what  | scientificName  |   |
+| where  | countryCode, decimalLatitude/decimalLongitude  | 13% Kew specimens have coordinates  |
+| when  | eventDate  |   |
+| who  | recordedBy  |   |
+| why  | field notebooks / collecting trip documentation  |   |
+ 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
@@ -44,71 +73,25 @@ associated with the lessons. They appear in the "Instructor View"
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: Can you do it?
+## Challenge 1: What kind of issues might you encounter when searching across specimen data from multiple institutions?
 
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+Review the table above and discuss with your neighbour for a couple of minutes.
 
 :::::::::::::::::::::::: solution 
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
+Report back to the whole group.
 
 :::::::::::::::::::::::::::::::::
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Figures
-
-You can use standard markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-::::::::::::::::::::::::::::::::::::: callout
-
-Callout sections can highlight information.
-
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides": 
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- Specimen records provide rich evidence.
+- They have variable levels of information - because of data availability, or the level of information digitised.
+- Post digitisation processes (e.g. georeferencing) can make records more usable.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-[r-markdown]: https://rmarkdown.rstudio.com/
