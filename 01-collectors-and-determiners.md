@@ -30,6 +30,14 @@ If you've used it for authoring scientific articles, what other research / curat
 
 ## Collectors and determiners in specimen data
 
+Most specimen records hold details of the collector and potentially multiple determination annotations.
+
+This is the Decaspermum dataset that we used in the recent Open Refine lesson: [Decaspermum in Malaysia (GBIF occurrences)](https://www.gbif.org/occurrence/search?occurrenceStatus=PRESENT&taxonKey=42C4&country=MY&basisOfRecord=PRESERVED_SPECIMEN&layout=occurrenceSummary_datasetKey_recordedBy.v-PIE_TaxonomicBreakdown)
+
+
+This specimen is included in the Decaspermum dataset: [Beaman 11871 (1996)](https://www.gbif.org/occurrence/4850456940)
+
+![](fig/ep01-beaman-11871-label.png)
 
 
 ::::::::::::::::::::::::::::::::::::: challenge 

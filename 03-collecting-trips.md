@@ -4,67 +4,24 @@ teaching: 10 # teaching time in minutes
 exercises: 5 # exercise time in minutes
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
-
-- q1
-- q2
-
-::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- If Bionomia gives career level aggregations, and GBIF gives collecting event level aggregations, explain how Geonomia gives collecting trip level aggregations
+- Demonstrate Geonomia interface and how the aggregated data can be used to curate data across institutional boundaries
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Context
 
+A geonomia instance for Malaysia is available here: https://nickynicolson-geonomia-my-07cd456.hf.space/ 
 
-## Introduction
-
-### Specimen digitisation
-
-Herbarium specimen digitisation has generated large numbers of standardised 
-specimen records and images, shared through institutional portals and aggregated 
-into repositories like GBIF. 
-
-### Specimens as evidence
-
-Specimen records are often described as essential evidence - *what* / *where* / *when*.
-Further investigation into how specimens were collected can uncover *who* collected 
-(and identified) them, and *why* they were collected (eg to document a habitat or 
-specific geographic location, or to expand our understanding of a particular 
-taxonomic group).
-
-### Data standardisation
-
-Digitisation (and data aggregation) processes have taken care to standardise 
-scientific names for specimens, but there are other fields commonly used for searching 
-that are more variable in format, especially when records are searched in an aggregator, 
-across specimens from different institutions.
-
-| Attribute  | Field   | Level of completeness |
-|---|---|---|
-| what  | scientificName  |   |
-| where  | countryCode, decimalLatitude/decimalLongitude  | 13% Kew specimens have coordinates  |
-| when  | eventDate  |   |
-| who  | recordedBy  |   |
-| why  | field notebooks / collecting trip documentation  |   |
- 
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
-## Challenge 1: What kind of issues might you encounter when searching across specimen data from multiple institutions?
+## Challenge 1: What might be the best way to integrate geonomia with GBIF (and Bionomia?)
 
-Review the table above and discuss with your neighbour for a couple of minutes.
+Discuss with your neighbour for a couple of minutes.
 
 :::::::::::::::::::::::: solution 
 
@@ -78,9 +35,9 @@ Report back to the whole group.
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Specimen records provide rich evidence.
-- They have variable levels of information - because of data availability, or the level of information digitised.
-- Post digitisation processes (e.g. georeferencing) can make records more usable.
+- geonomia aggregates data at the level of collecting trips
+- Because collecting trips share a purpose and spatial context this can help us explore habitat information and digitise related records together.
+- because specimens are dispersed across different collections, this can be a step towards community curation.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
