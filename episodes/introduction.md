@@ -14,8 +14,8 @@ exercises: 5 # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Discuss data mobilised through specimen digitisation
+- Consider how different organisations may standardise their specimen data
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
